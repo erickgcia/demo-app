@@ -128,3 +128,8 @@ body {
   );
   filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#82F4B1", endColorstr="#30C67C", GradientType=1 );
 }
+
+.g-logo {
+  opacity: 0;
+  transform: translateY(100%);
+}

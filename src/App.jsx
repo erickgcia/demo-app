@@ -1,7 +1,8 @@
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/all'
-import { landingMockup } from './assets/images'
+import { landingMockup, landingMockup2, landingMockup3 } from './assets/images'
+import { icons } from './assets/icons'
 gsap.registerPlugin(ScrollTrigger)
 
 const App = () => {
@@ -42,6 +43,13 @@ const App = () => {
       duration: 2,
       ease: 'power2.inOut',
     })
+
+    gsap.to('.g-logo', {
+      opacity: 1,
+      y: 0,
+      duration: 2,
+      ease: 'power2.inOut',
+    })
   }, [])
 
   return (
@@ -73,14 +81,14 @@ const App = () => {
           <section className="g-blue rounded-xl drop-shadow-lg">
             <img
               className="w-full p-6 object-cover object-center"
-              src={landingMockup}
+              src={landingMockup3}
               alt="Landing mockup image"
             />
           </section>
           <section className="g-green hidden sm:flex rounded-xl drop-shadow-lg">
             <img
               className="w-full p-6 object-cover object-center"
-              src={landingMockup}
+              src={landingMockup2}
               alt="Landing mockup image"
             />
           </section>
@@ -89,31 +97,15 @@ const App = () => {
           <span className="font-medium text-2xl">
             Trusted by companies worldwide
           </span>
-          <div className="flex flex-wrap items-center justify-center gap-8 w-[50%] border-b border-black pb-8">
-            <div className="text-2xl font-bold p-2 border border-zinc-300">
-              AtomChat
-            </div>
-            <div className="text-2xl font-bold p-2 border border-zinc-300">
-              AtomChat
-            </div>
-            <div className="text-2xl font-bold p-2 border border-zinc-300">
-              AtomChat
-            </div>
-            <div className="text-2xl font-bold p-2 border border-zinc-300">
-              AtomChat
-            </div>
-            <div className="text-2xl font-bold p-2 border border-zinc-300">
-              AtomChat
-            </div>
-            <div className="text-2xl font-bold p-2 border border-zinc-300">
-              AtomChat
-            </div>
-            <div className="text-2xl font-bold p-2 border border-zinc-300">
-              AtomChat
-            </div>
-            <div className="text-2xl font-bold p-2 border border-zinc-300">
-              AtomChat
-            </div>
+          <div className="flex flex-wrap items-center justify-center gap-6 w-[50%] border-b border-black pb-8">
+            {icons.map((icon, index) => (
+              <img
+                className="g-logo w-[110px]"
+                key={index}
+                src={icon}
+                alt={`${icon} icon`}
+              />
+            ))}
           </div>
         </article>
       </main>
