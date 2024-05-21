@@ -120,57 +120,51 @@ const App = () => {
               Perks that you&apos;ll love
             </h4>
           </section>
-          <article className="grid grid-cols-3 gap-6">
-            <section className="col-span-2 flex flex-col h-bg w-full rounded-xl p-6 gap-4">
+          <article className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <section className="md:col-span-1 lg:col-span-2 flex flex-col h-bg w-full rounded-xl p-6 gap-8">
               <div className="flex flex-col gap-4">
-                <strong className="font-semibold text-3xl">
-                  Uniquely yours
-                </strong>
-                <p className="text-xl text-balance">
-                  Every website is built from scratch bringing your designs come
-                  to life.
+                <strong className="font-medium text-3xl">Uniquely yours</strong>
+                <p className="text-lg text-balance">
+                  Every website is built from scratch bringing every design come
+                  to life with amazing quality.
                 </p>
               </div>
               <div className="w-1/2 self-end">
                 <img src={landingMockup} alt="random" />
               </div>
             </section>
-            <section className="col-span-1 flex flex-col w-full rounded-xl p-6 gap-4 bg-[#eef2f3]">
+            <section className="md:col-span-1 flex flex-col w-full rounded-xl p-6 gap-4 bg-[#eef2f3]">
               <div className="flex flex-col gap-4">
-                <strong className="font-semibold text-3xl">
-                  Uniquely yours
-                </strong>
-                <p className="text-xl text-balance">
-                  Every website is built from scratch bringing your designs come
-                  to life.
+                <div className="p-4">
+                  <img className="w-full" src={landingMockup} alt="random" />
+                </div>
+                <strong className="font-medium text-3xl">Simple plans</strong>
+                <p className="text-lg text-balance">
+                  No hidden fees, no surprises. Just choose the plan that&apos;s
+                  right for you.
                 </p>
               </div>
-              <div className="w-1/2 self-end">
-                <img src={landingMockup} alt="random" />
-              </div>
             </section>
-            <section className="col-span-1 flex flex-col w-full rounded-xl p-6 gap-4 bg-[#eef2f3]">
+            <section className="md:col-span-1 flex flex-col w-full rounded-xl p-6 gap-4 bg-[#eef2f3]">
               <div className="flex flex-col gap-4">
-                <strong className="font-semibold text-3xl">
-                  Uniquely yours
+                <div className="p-4">
+                  <img className="w-full" src={landingMockup} alt="random" />
+                </div>
+                <strong className="font-medium text-3xl">
+                  Top-notch quality
                 </strong>
-                <p className="text-xl text-balance">
-                  Every website is built from scratch bringing your designs come
-                  to life.
+                <p className="text-lg text-balance">
+                  Outstanding websites that are easy to navigate and engage your
+                  audience.
                 </p>
               </div>
-              <div className="w-1/2 self-end">
-                <img src={landingMockup} alt="random" />
-              </div>
             </section>
-            <section className="col-span-2 flex flex-col h-bg w-full rounded-xl p-6 gap-4">
+            <section className="md:col-span-1 lg:col-span-2 flex flex-col h-bg w-full rounded-xl p-6 gap-8">
               <div className="flex flex-col gap-4">
-                <strong className="font-semibold text-3xl">
-                  Uniquely yours
-                </strong>
-                <p className="text-xl text-balance">
-                  Every website is built from scratch bringing your designs come
-                  to life.
+                <strong className="font-medium text-3xl">Fast delivery</strong>
+                <p className="text-lg text-balance">
+                  The designs are delivered to you within a few days without
+                  compromising it&apos;s outcome.
                 </p>
               </div>
               <div className="w-1/2 self-end">
@@ -178,6 +172,25 @@ const App = () => {
               </div>
             </section>
           </article>
+          <section className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-4">
+            <div className="flex flex-col items-center justify-center py-6 px-1 border-t-4 w-full md:w-1/2 border-blue-400 gap-4">
+              <strong className="font-semibold text-2xl">
+                Reliable & efficient
+              </strong>
+              <p className="text-balance text-center text-md h-10">
+                Have full rights to the design you receive, including the source
+                files.
+              </p>
+            </div>
+            <div className="flex flex-col items-center justify-center py-6 px-1 border-t-4 w-full md:w-1/2 border-green-400 gap-4">
+              <strong className="font-semibold text-2xl">
+                Unlimited revisions
+              </strong>
+              <p className="text-balance text-center text-md h-10">
+                Request as many revisions if it&apos;s needed.
+              </p>
+            </div>
+          </section>
         </article>
       </main>
     </>
