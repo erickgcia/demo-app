@@ -123,7 +123,9 @@ const App = () => {
           <article className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <section className="md:col-span-1 lg:col-span-2 flex flex-col h-bg w-full rounded-xl p-6 gap-8">
               <div className="flex flex-col gap-4">
-                <strong className="font-medium text-3xl">Uniquely yours</strong>
+                <strong className="font-semibold text-3xl">
+                  Uniquely yours
+                </strong>
                 <p className="text-lg text-balance">
                   Every website is built from scratch bringing every design come
                   to life with amazing quality.
@@ -138,7 +140,7 @@ const App = () => {
                 <div className="p-4">
                   <img className="w-full" src={landingMockup} alt="random" />
                 </div>
-                <strong className="font-medium text-3xl">Simple plans</strong>
+                <strong className="font-semibold text-3xl">Simple plans</strong>
                 <p className="text-lg text-balance">
                   No hidden fees, no surprises. Just choose the plan that&apos;s
                   right for you.
@@ -150,7 +152,7 @@ const App = () => {
                 <div className="p-4">
                   <img className="w-full" src={landingMockup} alt="random" />
                 </div>
-                <strong className="font-medium text-3xl">
+                <strong className="font-semibold text-3xl">
                   Top-notch quality
                 </strong>
                 <p className="text-lg text-balance">
@@ -161,7 +163,9 @@ const App = () => {
             </section>
             <section className="md:col-span-1 lg:col-span-2 flex flex-col h-bg w-full rounded-xl p-6 gap-8">
               <div className="flex flex-col gap-4">
-                <strong className="font-medium text-3xl">Fast delivery</strong>
+                <strong className="font-semibold text-3xl">
+                  Fast delivery
+                </strong>
                 <p className="text-lg text-balance">
                   The designs are delivered to you within a few days without
                   compromising it&apos;s outcome.
@@ -192,6 +196,52 @@ const App = () => {
             </div>
           </section>
         </article>
+        <article className="bg-[#242424] py-20">
+          <article className="container-size grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-4">
+            <section className="col-span-1 flex flex-col gap-8">
+              <div className="flex flex-col gap-2">
+                <span className="text-gray-400 font-medium text-2xl">
+                  Process
+                </span>
+                <h5 className="text-5xl font-bold text-white text-balance">
+                  It&apos;s never been this easy.
+                </h5>
+              </div>
+              <div className="flex flex-col gap-8">
+                <p className="font-medium text-balance text-xl text-white">
+                  Streamlined and hassle-free, just the way you like and always
+                  wanted.
+                </p>
+                <button className="btn bg-[#fefefe] text-[#242424] text-lg font-bold w-fit">
+                  Get Started
+                </button>
+              </div>
+            </section>
+            <section className="col-span-1 flex flex-col gap-4">
+              <div className="flex flex-col justify-center gap-4 h-bg rounded-xl p-8 mb-6">
+                <img className="w-1/3" src={landingMockup} alt="random" />
+                <strong className="text-2xl font-semibold">
+                  Subscribe & Request
+                </strong>
+                <p className="text-md">
+                  Subscribe to a plan & request your website design through
+                  dashboard.
+                </p>
+              </div>
+              <div className="flex flex-col justify-center gap-4 h-fit h-bg rounded-xl p-8">
+                <img className="w-1/3" src={landingMockup} alt="random" />
+                <strong className="text-2xl font-semibold">
+                  Receive your design
+                </strong>
+                <p className="text-md">
+                  Our initial design concept is quickly delivered to you within
+                  just a few days.
+                </p>
+              </div>
+            </section>
+          </article>
+        </article>
+        <article className="h-[1000px]"></article>
       </main>
     </>
   )
