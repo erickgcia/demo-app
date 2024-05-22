@@ -6,6 +6,7 @@ import moomba from './moomba.svg'
 import naturalBeauty from './natural-beauty-basic.svg'
 import siemens from './siemens-3.svg'
 import wiley from './wiley.svg'
+import quotes from './quotes.svg'
 
 const icons = [
   academieLyon,
@@ -17,4 +18,4 @@ const icons = [
   siemens,
   wiley,
 ]
-export { icons }
+export { icons, quotes }

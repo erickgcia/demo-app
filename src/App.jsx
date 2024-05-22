@@ -2,7 +2,7 @@ import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/all'
 import { landingMockup, landingMockup2, landingMockup3 } from './assets/images'
-import { icons } from './assets/icons'
+import { icons, quotes } from './assets/icons'
 gsap.registerPlugin(ScrollTrigger)
 
 const App = () => {
@@ -240,8 +240,55 @@ const App = () => {
               </div>
             </section>
           </article>
+          <article className="t-bg flex flex-col items-center justify-center w-[min(90%,1100px)] mx-auto h-[250px] p-12 border-2 border-dotted border-white rounded-xl my-16">
+            <div className="relative flex flex-col gap-8">
+              <img
+                className="absolute top-[-30px] right-[-30px] w-14 z-10 opacity-20"
+                src={quotes}
+                alt="Quotation mark icon"
+              />
+              <p className="text-xl text-center font-medium text-white z-20 text-balance">
+                Absolutely great to work with and delivers professional and
+                creative work quickly.
+              </p>
+              <div className="flex items-center justify-center gap-4">
+                <img
+                  className="rounded-full w-12 aspect-square"
+                  src={landingMockup2}
+                  alt="random"
+                />
+                <div className="flex flex-col">
+                  <strong className="font-semibold text-white">Name</strong>
+                  <span className="text-gray-300">President</span>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article className="container-size">
+            <section className="flex flex-col items-center gap-14">
+              <div className="flex flex-col gap-2">
+                <span className="text-gray-400 font-medium text-2xl">
+                  Process
+                </span>
+                <h5 className="text-5xl font-bold text-white text-balance">
+                  Pixil perfect work and nothing else.
+                </h5>
+              </div>
+              <button className="btn bg-[#fefefe] text-[#242424] text-lg font-bold w-fit">
+                View recent works
+              </button>
+            </section>
+            <section className="grid grid-cols-1 md:grid-cols-3 place-content-center gap-4 py-20">
+              <div className="w-full rounded-xl h-full col-span-1 md:col-span-2 t-bg"></div>
+              <div className="w-full rounded-xl aspect-square col-span-1 h-bg"></div>
+              <div className="w-full rounded-xl aspect-square col-span-1 h-bg"></div>
+              <div className="w-full rounded-xl aspect-square col-span-1 h-bg"></div>
+              <div className="w-full rounded-xl aspect-square col-span-1 h-bg"></div>
+              <div className="w-full rounded-xl col-span-1 md:col-span-2 t-bg"></div>
+              <div className="w-full rounded-xl aspect-square col-span-1 h-bg"></div>
+            </section>
+          </article>
         </article>
-        <article className="h-[1000px]"></article>
       </main>
     </>
   )
