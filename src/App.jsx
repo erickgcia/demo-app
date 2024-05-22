@@ -278,7 +278,7 @@ const App = () => {
                 View recent works
               </button>
             </section>
-            <section className="grid grid-cols-1 md:grid-cols-3 place-content-center gap-4 py-20">
+            <section className="grid grid-cols-2 md:grid-cols-3 place-content-center gap-4 py-20">
               <div className="w-full rounded-xl h-full col-span-1 md:col-span-2 t-bg"></div>
               <div className="w-full rounded-xl aspect-square col-span-1 h-bg"></div>
               <div className="w-full rounded-xl aspect-square col-span-1 h-bg"></div>
