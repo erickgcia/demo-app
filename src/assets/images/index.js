@@ -8,6 +8,10 @@ import designMockup4 from './design-mockup-4.webp'
 import designMockup5 from './design-mockup-5.webp'
 import designMockup6 from './design-mockup-6.webp'
 import designMockup7 from './design-mockup-7.jpg'
+import calendar from './calendar.png'
+import circle from './circle.png'
+import medal from './medal.png'
+import price from './price.png'
 
 export {
   landingMockup,
@@ -20,4 +24,8 @@ export {
   designMockup5,
   designMockup6,
   designMockup7,
+  calendar,
+  circle,
+  medal,
+  price,
 }
