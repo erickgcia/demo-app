@@ -6,6 +6,7 @@ import { icons } from './assets/icons'
 import Benefits from './components/Benefits/Benefits.jsx'
 import Header from './components/Header/Header.jsx'
 import Process from './components/Process/Process.jsx'
+import Pricing from './components/Pricing/Pricing.jsx'
 import Mockups from './components/Mockups.jsx'
 import Clients from './components/Clients.jsx'
 
@@ -69,6 +70,7 @@ const App = () => {
         <Clients icons={icons} />
         <Benefits />
         <Process />
+        <Pricing />
       </main>
     </>
   )
