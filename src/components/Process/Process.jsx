@@ -4,7 +4,7 @@ import Testimonials from '../Testimonials'
 
 const Process = () => {
   return (
-    <article className="bg-black-500 py-20">
+    <article className="bg-black-500 pt-20">
       <article className="container-size grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-4">
         <section className="col-span-1 flex flex-col gap-8">
           <div className="flex flex-col gap-2">
