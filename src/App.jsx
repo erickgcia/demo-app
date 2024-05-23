@@ -3,11 +3,11 @@ import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/all'
 gsap.registerPlugin(ScrollTrigger)
 import { icons } from './assets/icons'
-import Header from './components/Header.jsx'
+import Benefits from './components/Benefits/Benefits.jsx'
+import Header from './components/Header/Header.jsx'
+import Process from './components/Process/Process.jsx'
 import Mockups from './components/Mockups.jsx'
 import Clients from './components/Clients.jsx'
-import Benefits from './components/Benefits.jsx'
-import Process from './components/Process.jsx'
 
 const App = () => {
   useGSAP(() => {

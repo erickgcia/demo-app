@@ -8,7 +8,7 @@ const Hero = () => {
         Design your perfect unique website with unlimited revisions at a flat
         fee.
       </h3>
-      <button className="btn bg-[#242424] text-white text-lg font-bold">
+      <button className="btn bg-black-500 text-white-500 text-lg font-bold">
         Get Started
       </button>
     </section>

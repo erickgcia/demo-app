@@ -6,7 +6,7 @@ import {
   designMockup5,
   designMockup6,
   designMockup7,
-} from '../assets/images'
+} from '../../assets/images'
 
 const ProcessGrid = () => {
   return (

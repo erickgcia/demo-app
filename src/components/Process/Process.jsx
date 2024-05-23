@@ -1,10 +1,10 @@
 import ProcessCTA from './ProcessCTA'
 import ProcessGrid from './ProcessGrid'
-import Testimonials from './Testimonials'
+import Testimonials from '../Testimonials'
 
 const Process = () => {
   return (
-    <article className="bg-[#242424] py-20">
+    <article className="bg-black-500 py-20">
       <article className="container-size grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-4">
         <section className="col-span-1 flex flex-col gap-8">
           <div className="flex flex-col gap-2">
@@ -18,7 +18,7 @@ const Process = () => {
               Streamlined and hassle-free, just the way you like and always
               wanted.
             </p>
-            <button className="btn bg-[#fefefe] text-[#242424] text-lg font-bold w-fit">
+            <button className="btn bg-white-500 text-black-500 text-lg font-bold w-fit">
               Get Started
             </button>
           </div>

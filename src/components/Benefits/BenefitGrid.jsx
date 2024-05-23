@@ -1,4 +1,4 @@
-import { calendar, medal, price, circle } from '../assets/images'
+import { calendar, medal, price, circle } from '../../assets/images'
 
 const BenefitGrid = () => {
   return (
@@ -19,7 +19,7 @@ const BenefitGrid = () => {
           />
         </div>
       </section>
-      <section className="md:col-span-1 flex flex-col w-full rounded-xl p-6 gap-4 bg-[#eef2f3]">
+      <section className="md:col-span-1 flex flex-col w-full rounded-xl p-6 gap-4 bg-custom-gray">
         <div className="flex flex-col gap-4">
           <div className="p-4">
             <img
@@ -35,7 +35,7 @@ const BenefitGrid = () => {
           </p>
         </div>
       </section>
-      <section className="md:col-span-1 flex flex-col w-full rounded-xl p-6 gap-4 bg-[#eef2f3]">
+      <section className="md:col-span-1 flex flex-col w-full rounded-xl p-6 gap-4 bg-custom-gray">
         <div className="flex flex-col gap-4">
           <div className="p-4">
             <img
