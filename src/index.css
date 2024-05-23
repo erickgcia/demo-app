@@ -208,3 +208,18 @@ body {
 .g-box {
   height: 500px;
 }
+
+.slick-current > div:first-child {
+  display: flex;
+  margin-bottom: 0.5rem;
+}
+
+.slick-dots li button:before {
+  color: white;
+  font-size: 0.75rem;
+  transition: all 200ms ease;
+}
+
+.slick-dots li.slick-active button:before {
+  color: white;
+}

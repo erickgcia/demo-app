@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 const PricingCard = ({ title, text, price, list, bgColor, spots }) => {
   return (
     <section
-      className={`cols-span-1 w-full aspect-square rounded-3xl ${bgColor} p-8`}
+      className={`cols-span-1 w-[min(100%,400px)] aspect-square rounded-3xl ${bgColor} p-8`}
     >
       <div className="flex flex-col gap-4">
         <strong className="font-semibold text-xl">{title}</strong>
