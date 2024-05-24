@@ -12,6 +12,9 @@ import calendar from './calendar.png'
 import circle from './circle.png'
 import medal from './medal.png'
 import price from './price.png'
+import userOne from './user-1.jpg'
+import userTwo from './user-2.jpg'
+import userThree from './user-3.jpg'
 
 export {
   landingMockup,
@@ -28,4 +31,7 @@ export {
   circle,
   medal,
   price,
+  userOne,
+  userTwo,
+  userThree,
 }

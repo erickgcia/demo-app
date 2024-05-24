@@ -1,3 +1,5 @@
+import { userOne, userTwo, userThree } from '../assets/images'
+
 export const pricingListing = {
   basic: {
     id: 'basic',
@@ -44,21 +46,21 @@ export const pricingListing = {
 export const testimonialsData = [
   {
     text: 'Absolutely great to work with and delivers professional and creative work quickly.',
-    name: 'Name',
+    name: 'John Doe',
     position: 'President',
-    image: '',
+    image: userOne,
   },
   {
     text: 'The team is fantastic! They understood our vision and brought it to life beautifully.',
-    name: 'Another Name',
+    name: 'Michael White',
     position: 'CEO',
-    image: '',
+    image: userTwo,
   },
   {
     text: 'The team is fantastic! They understood our vision and brought it to life beautifully.',
-    name: 'Another Name',
+    name: 'Mike McConnell',
     position: 'CEO',
-    image: '',
+    image: userThree,
   },
 ]
 
@@ -105,3 +107,5 @@ export const frequentlyAskQuestions = [
       "Unfortunately, if design work has started we don't offer any form of money-back guarantee, but if you're unsatisfied with our service, please get in touch and we'll do our best to make things right.",
   },
 ]
+
+export const navList = ['Benefits', 'Process', 'Work', 'Pricing', 'FAQs']

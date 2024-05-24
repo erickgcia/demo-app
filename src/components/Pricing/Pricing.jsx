@@ -4,7 +4,7 @@ import { pricingListing } from '../../constants'
 const Pricing = () => {
   const { basic, popular, advance } = pricingListing
   return (
-    <article className="container-size">
+    <article id="pricing" className="container-size">
       <section className="flex flex-col items-center justify-center gap-6 py-14">
         <div className="flex flex-col gap-2 font-medium">
           <span className="text-3xl text-gray-400">Plans</span>

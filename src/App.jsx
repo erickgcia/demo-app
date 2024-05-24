@@ -2,7 +2,7 @@ import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/all'
 gsap.registerPlugin(ScrollTrigger)
-import { icons } from './assets/icons'
+import { companies } from './assets/icons'
 import Benefits from './components/Benefits/Benefits.jsx'
 import Header from './components/Header/Header.jsx'
 import Process from './components/Process/Process.jsx'
@@ -11,6 +11,8 @@ import Mockups from './components/Mockups.jsx'
 import Clients from './components/Clients.jsx'
 import Questions from './components/Question/Questions.jsx'
 import CallToAction from './components/CallToAction.jsx'
+import Footer from './components/Footer.jsx'
+import Nav from './components/Nav.jsx'
 
 const App = () => {
   useGSAP(() => {
@@ -67,15 +69,17 @@ const App = () => {
   return (
     <>
       <Header />
+      <Nav />
       <main>
         <Mockups />
-        <Clients icons={icons} />
+        <Clients icons={companies} />
         <Benefits />
         <Process />
         <Pricing />
         <Questions />
         <CallToAction />
       </main>
+      <Footer />
     </>
   )
 }

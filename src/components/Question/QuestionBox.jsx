@@ -9,7 +9,7 @@ const QuestionBox = ({ question, answer }) => {
   }
 
   return (
-    <details className="block w-1/2 border-2 border-white p-4 rounded-2xl font-medium text-gray-400 text-lg">
+    <details className="block w-full md:w-1/2 border-2 border-white p-4 rounded-2xl font-medium text-gray-400 text-lg">
       <summary
         onClick={handleClick}
         className="font-semibold text-white text-xl question-faq"

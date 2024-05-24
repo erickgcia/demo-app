@@ -1,8 +1,11 @@
 import ProcessCTA from './ProcessCTA'
 import ProcessGrid from './ProcessGrid'
-import Testimonials from '../Testimonials'
+import Testimonials from '../Testimonials/Testimonials'
+import { numbers } from '../../assets/icons'
+import MainButton from '../MainButton'
 
 const Process = () => {
+  const [numOne, numTwo] = numbers
   return (
     <article className="bg-black-500 pt-20">
       <article className="container-size grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-4">
@@ -18,14 +21,12 @@ const Process = () => {
               Streamlined and hassle-free, just the way you like and always
               wanted.
             </p>
-            <button className="btn bg-white-500 text-black-500 text-lg font-bold w-fit">
-              Get Started
-            </button>
+            <MainButton color="white-500" textClr="black-500" size="xl" />
           </div>
         </section>
         <section className="col-span-1 flex flex-col gap-4">
           <div className="flex flex-col justify-center gap-4 h-bg rounded-xl p-8 mb-6">
-            <img className="w-1/3" src="" alt="random" />
+            <img className="w-20" src={numOne} alt="Number one icon" />
             <strong className="text-2xl font-semibold">
               Subscribe & Request
             </strong>
@@ -35,7 +36,7 @@ const Process = () => {
             </p>
           </div>
           <div className="flex flex-col justify-center gap-4 h-fit h-bg rounded-xl p-8">
-            <img className="w-1/3" src="" alt="random" />
+            <img className="w-20" src={numTwo} alt="Number two icon" />
             <strong className="text-2xl font-semibold">
               Receive your design
             </strong>

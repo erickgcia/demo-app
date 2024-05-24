@@ -1,3 +1,5 @@
+import MainButton from '../MainButton'
+
 const Hero = () => {
   return (
     <section className="container-size flex flex-col items-center justify-center gap-12 text-center">
@@ -8,9 +10,7 @@ const Hero = () => {
         Design your perfect unique website with unlimited revisions at a flat
         fee.
       </h3>
-      <button className="btn bg-black-500 text-white-500 text-lg font-bold">
-        Get Started
-      </button>
+      <MainButton size="xl" textClr="white-500" color="black-500" />
     </section>
   )
 }

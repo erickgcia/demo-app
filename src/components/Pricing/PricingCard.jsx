@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types'
+import MainButton from '../MainButton'
 
 const PricingCard = ({ title, text, price, list, bgColor, spots }) => {
   return (
@@ -14,9 +15,7 @@ const PricingCard = ({ title, text, price, list, bgColor, spots }) => {
         </p>
       </div>
       <div className="flex flex-col gap-4 items-center justify-center">
-        <button className="btn bg-black-500 text-white-500 text-lg font-semibold w-fit">
-          Get Started
-        </button>
+        <MainButton textClr="white-500" color="black-500" size="lg" />
         <a className="text-black-500 font-semibold underline" href="#">
           Book a call
         </a>
