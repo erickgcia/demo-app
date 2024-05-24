@@ -1,4 +1,4 @@
-import QuestionBox from './QuestionBox'
+import QuestionBox from './QuestionBox.jsx'
 
 const Questions = () => {
   return (
@@ -12,7 +12,7 @@ const Questions = () => {
             Questions? Here are answers
           </h6>
         </section>
-        <section className="flex flex-col gap-8">
+        <section className="flex flex-col items-center justify-center gap-8 py-20">
           <QuestionBox />
         </section>
       </article>
