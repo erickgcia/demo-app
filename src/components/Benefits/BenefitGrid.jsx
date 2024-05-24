@@ -3,7 +3,7 @@ import { calendar, medal, price, circle } from '../../assets/images'
 const BenefitGrid = () => {
   return (
     <article className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-      <section className="md:col-span-1 lg:col-span-2 flex flex-col h-bg w-full rounded-xl p-6 gap-8">
+      <section className="md:col-span-1 lg:col-span-2 flex flex-col h-bg w-full h-fit md:h-[450px] rounded-xl p-6 gap-8">
         <div className="flex flex-col gap-4">
           <strong className="font-semibold text-3xl">Uniquely yours</strong>
           <p className="text-lg text-balance">
@@ -11,19 +11,19 @@ const BenefitGrid = () => {
             life with amazing quality.
           </p>
         </div>
-        <div className="w-full lg:w-1/2 self-end">
+        <div className="w-full lg:w-1/2 lg:self-end">
           <img
-            className="w-3/4 mx-auto md:mx-0 md:w-full aspect-square object-contain"
+            className="w-3/4 mx-auto md:mx-0 aspect-square object-contain"
             src={circle}
             alt="Color of circles icon"
           />
         </div>
       </section>
-      <section className="md:col-span-1 flex flex-col w-full rounded-xl p-6 gap-4 bg-custom-gray">
+      <section className="md:col-span-1 flex flex-col w-full rounded-xl p-6 gap-4 h-fit md:h-[450px] bg-custom-gray">
         <div className="flex flex-col gap-4">
           <div className="p-4">
             <img
-              className="w-3/4 mx-auto md:mx-0 md:w-full aspect-square object-contain"
+              className="w-3/4 mx-auto md:mx-0 aspect-square object-contain"
               src={price}
               alt="Price tag icon"
             />
@@ -35,11 +35,11 @@ const BenefitGrid = () => {
           </p>
         </div>
       </section>
-      <section className="md:col-span-1 flex flex-col w-full rounded-xl p-6 gap-4 bg-custom-gray">
+      <section className="md:col-span-1 flex flex-col w-full rounded-xl p-6 gap-4 h-fit md:h-[450px] bg-custom-gray">
         <div className="flex flex-col gap-4">
           <div className="p-4">
             <img
-              className="w-3/4 mx-auto md:mx-0 md:w-full aspect-square object-contain"
+              className="w-3/4 mx-auto aspect-square object-contain"
               src={medal}
               alt="Medal with blue ribbon icon"
             />
@@ -51,7 +51,7 @@ const BenefitGrid = () => {
           </p>
         </div>
       </section>
-      <section className="md:col-span-1 lg:col-span-2 flex flex-col h-bg w-full rounded-xl p-6 gap-8">
+      <section className="md:col-span-1 lg:col-span-2 flex flex-col h-bg w-full h-fit md:h-[450px] rounded-xl p-6 gap-8">
         <div className="flex flex-col gap-4">
           <strong className="font-semibold text-3xl">Fast delivery</strong>
           <p className="text-lg text-balance">
@@ -59,9 +59,9 @@ const BenefitGrid = () => {
             compromising it&apos;s outcome.
           </p>
         </div>
-        <div className="w-full lg:w-1/2 self-end">
+        <div className="w-3/4 mx-auto lg:m-0 lg:w-1/2 lg:self-end">
           <img
-            className="w-3/4 mx-auto md:mx-0 md:w-full aspect-square object-contain"
+            className="w-3/4 mx-auto md:mx-0 aspect-square object-contain"
             src={calendar}
             alt="Caledar icon"
           />

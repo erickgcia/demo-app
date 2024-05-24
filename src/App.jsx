@@ -10,6 +10,7 @@ import Pricing from './components/Pricing/Pricing.jsx'
 import Mockups from './components/Mockups.jsx'
 import Clients from './components/Clients.jsx'
 import Questions from './components/Question/Questions.jsx'
+import CallToAction from './components/CallToAction.jsx'
 
 const App = () => {
   useGSAP(() => {
@@ -73,6 +74,7 @@ const App = () => {
         <Process />
         <Pricing />
         <Questions />
+        <CallToAction />
       </main>
     </>
   )

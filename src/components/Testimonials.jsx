@@ -14,7 +14,7 @@ const Testimonials = () => {
   }
 
   return (
-    <Slider className="w-3/4 mx-auto" {...settings}>
+    <Slider className="w-3/4 mx-auto py-10 my-20" {...settings}>
       {testimonialsData &&
         testimonialsData.map((testimonial, index) => (
           <article

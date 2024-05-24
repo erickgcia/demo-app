@@ -1,6 +1,7 @@
 import { useState } from 'react'
+import PropTypes from 'prop-types'
 
-const QuestionBox = () => {
+const QuestionBox = ({ question, answer }) => {
   const [open, isOpen] = useState(false)
 
   const handleClick = () => {
@@ -14,13 +15,16 @@ const QuestionBox = () => {
         className="font-semibold text-white text-xl question-faq"
         style={open ? { marginBottom: '1rem' } : {}}
       >
-        How does it work?
+        {question}
       </summary>
-      We&apos;ll work with you to understand your business and product. Submit
-      your requests for design we&apos;ll get it designed. It&apos;s as simple
-      as that.
+      {answer}
     </details>
   )
+}
+
+QuestionBox.propTypes = {
+  question: PropTypes.string,
+  answer: PropTypes.string,
 }
 
 export default QuestionBox
