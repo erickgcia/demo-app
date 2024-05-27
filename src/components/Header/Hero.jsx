@@ -1,4 +1,6 @@
 import MainButton from '../MainButton'
+// eslint-disable-next-line no-unused-vars
+import React from 'react'
 
 const Hero = () => {
   return (
@@ -10,7 +12,7 @@ const Hero = () => {
         Design your perfect unique website with unlimited revisions at a flat
         fee.
       </h3>
-      <MainButton size="xl" textClr="white-500" color="black-500" />
+      <MainButton size="xl" textClr="white" color="black-500" />
     </section>
   )
 }

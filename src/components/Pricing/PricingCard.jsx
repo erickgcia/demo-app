@@ -15,7 +15,7 @@ const PricingCard = ({ title, text, price, list, bgColor, spots }) => {
         </p>
       </div>
       <div className="flex flex-col gap-4 items-center justify-center">
-        <MainButton textClr="white-500" color="black-500" size="lg" />
+        <MainButton textClr="white" color="black-500" size="lg" />
         <a className="text-black-500 font-semibold underline" href="#">
           Book a call
         </a>

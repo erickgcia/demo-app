@@ -8,7 +8,7 @@ const CallToAction = () => {
           Ready to fall in love with your website?
         </p>
         <div className="flex flex-col md:flex-row gap-4">
-          <MainButton textClr="white-500" color="black-500" size="xl" />
+          <MainButton textClr="white" color="black-500" size="xl" />
           <button className="btn md:w-44 bg-zinc-100 text-black-500 text-lg font-semibold border-black-500">
             Let&apos;s chat
           </button>
