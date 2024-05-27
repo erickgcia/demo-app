@@ -1,20 +1,22 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react'
-import { fireEvent, render } from '@testing-library/react'
+import { fireEvent, render, screen } from '@testing-library/react'
 import '@testing-library/jest-dom/'
 import Header from '../Header/Header.jsx'
 import MainButton from '../MainButton.jsx'
 
-describe('Testing for the Header components', () => {
+describe('Header component tests', () => {
   it('Should render the Header component', () => {
-    expect(render(<Header />).getByText('MagicDesign UI')).toBeInTheDocument()
+    render(<Header />)
+    const title = screen.getByText('MagicDesign UI')
+    expect(title).toBeInTheDocument()
   })
 })
 
-describe('Testing for the Main Button Component', () => {
+describe('MainButton component test', () => {
   it('Button should scroll to href on click', () => {
-    const { getByText } = render(<MainButton />)
-    const button = getByText('Get Started')
+    render(<MainButton />)
+    const button = screen.getByText('Get Started')
     fireEvent.click(button)
     setTimeout(() => {
       expect(window.location.hash).toBe('#pricing')

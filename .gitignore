@@ -8,9 +8,13 @@ pnpm-debug.log*
 lerna-debug.log*
 
 node_modules
+coverage
+__test__
+*.test
 dist
 dist-ssr
 *.local
+*.env
 
 # Editor directories and files
 .vscode/*
